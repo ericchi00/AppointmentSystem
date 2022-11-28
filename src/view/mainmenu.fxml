@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="643.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainMenuController">
+   <children>
+      <TableView fx:id="appointmentTableView" layoutX="5.0" layoutY="42.0" prefHeight="200.0" prefWidth="1187.0">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy></TableView>
+      <Button layoutX="1141.0" layoutY="247.0" mnemonicParsing="false" onAction="#deleteAppointment" text="Delete" />
+      <Button layoutX="1080.0" layoutY="247.0" mnemonicParsing="false" onAction="#openModifyAppointmentMenu" text="Modify" />
+      <Button layoutX="1036.0" layoutY="247.0" mnemonicParsing="false" onAction="#openAddAppointmentMenu" text="Add" />
+      <TableView fx:id="customerTableView" layoutX="5.0" layoutY="404.0" prefHeight="200.0" prefWidth="1187.0">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button layoutX="1141.0" layoutY="610.0" mnemonicParsing="false" onAction="#deleteCustomer" text="Delete" />
+      <Button layoutX="1080.0" layoutY="609.0" mnemonicParsing="false" onAction="#openModifyCustomerMenu" text="Modify" />
+      <Button layoutX="1036.0" layoutY="609.0" mnemonicParsing="false" onAction="#openAddCustomerMenu" text="Add" />
+      <Label fx:id="customerDelete" layoutX="8.0" layoutY="612.0" />
+      <Label fx:id="appointmentDelete" layoutX="14.0" layoutY="251.0" />
+      <RadioButton fx:id="allAppointments" layoutX="5.0" layoutY="14.0" mnemonicParsing="false" selected="true" text="All Appointments">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="currentMonth" layoutX="128.0" layoutY="14.0" mnemonicParsing="false" onAction="#showCurrentMonth" text="Current Month" toggleGroup="$group" />
+      <RadioButton fx:id="currentWeek" layoutX="235.0" layoutY="14.0" mnemonicParsing="false" onAction="#showCurrentWeek" text="Current Week" toggleGroup="$group" />
+      <Label fx:id="appointmentLabel" layoutX="887.0" layoutY="14.0" />
+      <Label layoutX="11.0" layoutY="296.0" text="Appointments by Month/Type">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="appointmentsByMonth" layoutX="14.0" layoutY="322.0" />
+      <Label layoutX="178.0" layoutY="296.0" text="Appointments by Location">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="appointmentsByLocation" layoutX="178.0" layoutY="322.0" />
+      <ComboBox fx:id="contactComboBox" layoutX="386.0" layoutY="10.0" onAction="#handleAppointmentsByContact" prefWidth="150.0" />
+      <Label layoutX="339.0" layoutY="14.0" text="Contact: " />
+   </children>
+</AnchorPane>

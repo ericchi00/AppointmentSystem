@@ -1,0 +1,8 @@
+
+User test successfully logged in at 2022-11-28 at 13:16:34 PST
+User asdf gave invalid log-in at 2022-11-28 at 13:17:59 PST
+User asdf gave invalid log-in at 2022-11-28 at 13:18:00 PST
+User test gave invalid log-in at 2022-11-28 at 13:18:02 PST
+User admin gave invalid log-in at 2022-11-28 at 13:18:04 PST
+User test successfully logged in at 2022-11-28 at 13:18:08 PST
+User test successfully logged in at 2022-11-28 at 13:25:17 PST
